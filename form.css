@@ -1,0 +1,241 @@
+/* stylelint-disable no-descending-specificity */
+body {
+  font-family: "Poppins", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.8;
+  font-weight: normal;
+  background: #fafafa;
+  margin: 0;
+}
+
+p {
+  color: #fff;
+  font: 16px Poppins, Arial, sans-serif;
+  display: inline-block;
+}
+
+html {
+  font-family: sans-serif;
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  line-height: 1.5;
+  font-weight: 400;
+  font-family: "Poppins", Arial, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  font-size: 14px;
+  color: white;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+a:hover {
+  background-color: #2b2828;
+  color: white;
+}
+
+.nav-bar {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  position: sticky;
+  top: 0;
+  justify-content: space-between;
+  line-height: 80px;
+  background-color: #201212;
+  z-index: 2;
+}
+
+.nametag {
+  vertical-align: middle;
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+  padding-left: 32px;
+}
+
+.navigation-links {
+  display: flex;
+  align-items: center;
+  padding-right: 30px;
+}
+
+.navigation-links a {
+  height: 80px;
+  display: inline-block;
+  padding: 0 15px;
+  color: white;
+  text-decoration: none;
+  position: relative;
+}
+
+.navigation-links a:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+/* Dropdown container */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown button styling */
+.dropbtn {
+  color: white;
+  padding: 0 15px;
+  text-decoration: none;
+  background: none; /* Remove background */
+}
+
+/* Dropdown content styling */
+.dropdown-content {
+  max-height: 0; /* Start with a height of 0 to hide */
+  overflow: hidden; /* Prevent overflow */
+  position: absolute; /* Position dropdown */
+  background-color: #333; /* Background color */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Drop shadow */
+  z-index: 1; /* Ensure it appears on top */
+  width: 100%; /* Make the width equal to the parent element */
+  top: 100%; /* Position dropdown below the parent */
+  left: 0; /* Align dropdown content with the parent link */
+  opacity: 0; /* Set initial opacity to 0 */
+  transition: opacity 0.3s ease, max-height 0.3s ease; /* Smooth transitions */
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: white;
+  padding: 12px 6px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  height: 50px;
+  line-height: 30px;
+}
+
+.dropdown-content a:hover {
+  background-color: #575757; /* Hover effect */
+}
+
+/* Show the dropdown when the parent .dropdown is hovered */
+.dropdown:hover .dropdown-content {
+  opacity: 1; /* Show dropdown with smooth opacity */
+  max-height: 500px; /* Adjust this to a value larger than the height of your dropdown content */
+}
+
+.space {
+  width: 100%;
+  height: 80px;
+}
+
+.main-section {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.form-page {
+  display: flex;
+  width: 360px;
+  height: 480px;
+  padding: 63px;
+  background-color: #fff;
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.1);
+}
+
+.get-in-touch {
+  width: 353px;
+  height: 42px;
+  font: 1.5rem Poppins, Arial, sans-serif;
+  margin: 0 0 24px;
+}
+
+.name,
+.email,
+.subject {
+  display: block;
+  width: 100%;
+  height: calc(1.5em + 0.75rem + 2px);
+  padding: 0.375rem 0.75rem;
+  font: 1rem Poppins, Arial, sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  margin-bottom: 10px;
+}
+
+.message {
+  display: block;
+  width: 100%;
+  height: 200px;
+  padding: 0.375rem 0.75rem; /* Top and side padding */
+  font: 1rem Poppins, Arial, sans-serif;
+  line-height: 1.2; /* Reduce line-height to bring text upwards */
+  text-align: left; /* Align text to the left */
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  margin-bottom: 20px;
+}
+
+.message::placeholder {
+  padding-top: 10px; /* Add top padding to position placeholder */
+  line-height: 1.2;
+}
+
+.submit {
+  background-color: #1089ff;
+  margin: 0 0 20px;
+  padding: 12px 16px;
+  color: white;
+  border: 0;
+  border-radius: 5px;
+}
+
+.contact-info {
+  padding: 22px 48px 48px 48px;
+  background-color: rgb(16, 137, 255);
+  width: 250px;
+  padding-bottom: 160px;
+  box-shadow: 20px 10px 15px 0 rgba(0, 0, 0, 0.1);
+}
+
+.contact-info h3 {
+  color: white;
+  margin: 24px 0;
+  font: 28px Poppins, Arial, sans-serif;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  background-color: rgb(255, 253, 253);
+  display: flex; /* Use flexbox for centering */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  border-radius: 50%;
+  margin-right: 10px; /* Space between logo and paragraph */
+}
+
+.logo-div {
+  display: flex; /* Use flexbox to align logo and paragraph */
+  align-items: center; /* Vertically center items */
+  margin-bottom: 20px; /* Space between contact info items */
+}
